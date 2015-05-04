@@ -23,6 +23,7 @@ import java.util.List;
  * Created by lzw on 15/1/2.
  */
 public class StatusListActivity extends BaseActivity {
+  private static final int SEND_REQUEST = 2;
   @InjectView(R.id.status_List)
   BaseListView<Status> statusList;
 
@@ -128,6 +129,17 @@ public class StatusListActivity extends BaseActivity {
 
   @OnClick(R.id.send)
   void goSend() {
-    StatusUtils.goActivity(StatusListActivity.this, StatusSendActivity.class);
+    Intent intent = new Intent(StatusListActivity.this, StatusSendActivity.class);
+    startActivityForResult(intent, SEND_REQUEST);
+  }
+
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (resultCode == RESULT_OK) {
+      if (requestCode == SEND_REQUEST) {
+        statusList.onRefresh();
+      }
+    }
   }
 }

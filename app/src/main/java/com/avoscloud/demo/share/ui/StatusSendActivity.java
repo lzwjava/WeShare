@@ -29,9 +29,11 @@ import java.io.IOException;
  */
 public class StatusSendActivity extends Activity {
   private static final int IMAGE_PICK_REQUEST = 0;
+  Context context;
+
   @InjectView(R.id.editText)
   EditText editText;
-  Context context;
+
   @InjectView(R.id.image)
   ImageView imageView;
 
@@ -70,6 +72,7 @@ public class StatusSendActivity extends Activity {
         public void done(AVException e) {
           dialog.dismiss();
           if (StatusUtils.filterException(context, e)) {
+            setResult(RESULT_OK);
             finish();
           }
         }
