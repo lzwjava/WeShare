@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_green">
+        <item name="android:background">@drawable/btn_green</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+    <style name="btn_green.status_menu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Avatar">
+        <item name="android:layout_width">@dimen/avatarSize</item>
+        <item name="android:layout_height">@dimen/avatarSize</item>
+    </style>
+
+</resources>

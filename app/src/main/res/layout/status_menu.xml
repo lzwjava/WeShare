@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/send"
+        style="@style/btn_green.status_menu"
+        android:text="@string/status_menu_send" />
+
+    <TextView
+        android:id="@+id/followers"
+        style="@style/btn_green.status_menu"
+        android:text="@string/status_followers" />
+
+    <TextView
+        android:id="@+id/following"
+        style="@style/btn_green.status_menu"
+        android:text="@string/status_following" />
+
+
+</LinearLayout>

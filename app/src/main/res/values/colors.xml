@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_like_pink">#ff6868</color>
+    <color name="status_background">#FFA</color>
+    <color name="status_text">#000</color>
+    <color name="status_color">#FFFF0000</color>
+
+    <color name="tree_green">#5CB98D</color>
+    <color name="dark_tree_green">#428666</color>
+</resources>
